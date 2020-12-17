@@ -19,9 +19,15 @@ def main():
     """
 
     #introduction 
-    print('Welcome to Spacegames')
-
+    print('Welcome to Spacegames. BETA;)')
+    
+    print("instructions: \n")
+    print("For both players, the topmost bar indicates health while the bar right below it indicates your gun power, which is your ammo. \n")
+    print("The bottom bar is an indicator for the ship speed. ")
+    
+    print("PLAYER 1: standard WASD movement with Q to fire guns")
     player1 = Player(input("Player 1, please enter your ship name : "), 200, 50, 22, 90, 100) # left player
+    print("PLAYER 2: standard arrow key movement with spacebar to fire guns. ")
     player2 = Player(input("Player 2, please enter your ship name : "), 1000, 640, 34, 102, 5) # Right player
 
     p1Ship = pygame.transform.scale(pygame.transform.rotate(pygame.image.load('images/spaceplane.png'), 90), (125, 125))
